@@ -7,7 +7,7 @@ Allow LUA access to nlohmann's JSON instance
 | Name | License | Version |
 |------|---------|---------|
 | [LUA](https://github.com/lua/lua) | [`MIT`](https://www.lua.org/license.html) | branch: [`master`](https://github.com/lua/lua/tree/master/) |
-| [sol2](https://github.com/ThePhD/sol2) | [`MIT`](https://github.com/ThePhD/sol2/blob/develop/LICENSE.txt) | branch: [`develop`](https://github.com/ThePhD/sol2/tree/develop) |
+| [nlohmann JSON](https://nlohmann.github.io/json/) | [`MIT`](https://github.com/nlohmann/json/blob/master/LICENSE.MIT) | branch: [`master`](https://github.com/nlohmann/json/tree/master) |
 
 All libraries are used as `static library` to maximize optimization and limit problems with deployment and versions.
 

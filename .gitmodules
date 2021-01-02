@@ -2,10 +2,6 @@
 	path = lib/lua/src
 	url = git@github.com:lua/lua.git
 	branch = master
-[submodule "sol2"]
-	path = lib/sol2
-	url = git@github.com:ThePhD/sol2.git
-	branch = develop
 [submodule "nlohmann_json"]
 	path = lib/nlohmann_json
 	url = git@github.com:nlohmann/json.git

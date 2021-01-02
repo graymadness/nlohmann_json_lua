@@ -39,8 +39,7 @@ target_include_directories(nlohmann_json_lua PUBLIC src/)
 if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
     target_link_libraries(nlohmann_json_lua -static-libgcc -static-libstdc++)
 endif()
-target_link_libraries(nlohmann_json_lua nlohmann_json)
-target_link_libraries(nlohmann_json_lua lua sol2)
+target_link_libraries(nlohmann_json_lua nlohmann_json lua)
 
 #--------------------------------
 # Source

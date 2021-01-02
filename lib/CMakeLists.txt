@@ -10,14 +10,6 @@ if(NOT TARGET lua)
 endif()
 
 #--------------------------------
-# sol2
-# Extended C++ support of LUA
-#--------------------------------
-if(NOT TARGET sol2)
-    add_subdirectory(sol2)
-endif()
-
-#--------------------------------
 # nlohmann JSON
 # JSON for Modern C++
 #--------------------------------
