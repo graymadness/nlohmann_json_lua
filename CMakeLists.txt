@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(LUA_Template C CXX)
+project(nlohmann_json_lua C CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
@@ -33,13 +33,14 @@ add_subdirectory(lib)
 
 file(GLOB_RECURSE PROJECT_SOURCE src/*.hpp src/*.cpp src/*.h src/*.c)
 
-add_library(LUA_Template STATIC ${PROJECT_SOURCE})
-target_include_directories(LUA_Template PUBLIC src/)
+add_library(nlohmann_json_lua STATIC ${PROJECT_SOURCE})
+target_include_directories(nlohmann_json_lua PUBLIC src/)
 
 if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    target_link_libraries(LUA_Template -static-libgcc -static-libstdc++)
+    target_link_libraries(nlohmann_json_lua -static-libgcc -static-libstdc++)
 endif()
-target_link_libraries(LUA_Template lua sol2)
+target_link_libraries(nlohmann_json_lua nlohmann_json)
+target_link_libraries(nlohmann_json_lua lua sol2)
 
 #--------------------------------
 # Source

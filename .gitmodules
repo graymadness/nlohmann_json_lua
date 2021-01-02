@@ -6,3 +6,7 @@
 	path = lib/sol2
 	url = git@github.com:ThePhD/sol2.git
 	branch = develop
+[submodule "nlohmann_json"]
+	path = lib/nlohmann_json
+	url = git@github.com:nlohmann/json.git
+	branch = master

@@ -9,8 +9,9 @@ endif()
 # Library
 #--------------------------------
 
-file(GLOB LUA_SOURCE src/*.h src/*.c)
+file(GLOB LUA_SOURCE src/*.c)
 list(REMOVE_ITEM LUA_SOURCE ${PROJECT_SOURCE_DIR}/src/lua.c) # Remove interpreter
+list(REMOVE_ITEM LUA_SOURCE ${PROJECT_SOURCE_DIR}/src/onelua.c) # Remove all-in-one file (includes .c files)
 
-add_library (lua STATIC ${LUA_SOURCE})
+add_library(lua STATIC ${LUA_SOURCE})
 target_include_directories(lua PUBLIC src/)

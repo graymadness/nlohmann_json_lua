@@ -2,3 +2,5 @@ add_subdirectory(sol2_beep)
 add_subdirectory(sol2_boop)
 add_subdirectory(sol2_print)
 add_subdirectory(sol2_print_script)
+
+add_subdirectory(test)
